@@ -20,7 +20,7 @@ export const Navigation = () => {
 
   return (
     <>
-      <header className="w-[1200px] mx-auto">
+      <header className="flex items-center justify-between py-10 w-[1200px] mx-auto">
         <Link to="/" className="w-[150px]">
           <img
             src="https://archives.bulbagarden.net/media/upload/4/4b/Pok%C3%A9dex_logo.png"
@@ -28,15 +28,15 @@ export const Navigation = () => {
           />
         </Link>
 
-        <form onSubmit={onSearchSubmit}>
-          <div className="form-group">
+        <form className="flex items-center gap-[15px]" onSubmit={onSearchSubmit}>
+          <div className="flex items-center gap-[10px] border border-gray-500 rounded-3xl px-5 py-[15px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="icon-search"
+              className="w-5 h-5 stroke-slate-500"
             >
               <path
                 strokeLinecap="round"
@@ -45,6 +45,7 @@ export const Navigation = () => {
               />
             </svg>
             <input
+            className="w-[300px] border-none outline-none text-base font-medium"
               type="search"
               name="valueSearch"
               id=""
@@ -54,7 +55,7 @@ export const Navigation = () => {
             />
           </div>
 
-          <button className="text-white bg-primary font-medium rounded-full py-3 px-6 uppercase tracking-wide">Buscar</button>
+          <button className="text-white font-semibold border-none outline-none bg-primary cursor-pointer font-medium rounded-3xl py-[15px] px-[30px] tracking-wide hover:bg-primary-hover hover:text-black">Buscar</button>
         </form>
       </header>
 

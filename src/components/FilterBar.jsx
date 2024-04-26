@@ -5,11 +5,15 @@ export const FilterBar = () => {
   const { active, handleCheckbox } = useContext(PokemonContext);
 
   return (
-    <div className={`container-filters ${active ? "active" : ""}`}>
-      <div className="filter-by-type">
-        <span>Tipo</span>
+    <div
+      className={`flex justify-center fixed top-0 left-[-300px] w-[250px] text-[#555] bg-[#f2f2f2] h-full pt-[140px] transition-all duration-300 ease-linear container-filters ${
+        active ? "active" : ""
+      }`}
+    >
+      <div className="flex flex-col gap-5">
+        <span className="font-bold text-[22px]" >Tipo</span>
 
-        <div className="group-type">
+        <div className="flex gap-[10px] ml-[15px]">
           <input
             type="checkbox"
             onChange={handleCheckbox}
@@ -18,158 +22,158 @@ export const FilterBar = () => {
           />
           <label htmlFor="grass">Planta</label>
         </div>
-        <div className="group-type">
+        <div className="flex gap-[10px] ml-[15px]">
           <input
             type="checkbox"
             onChange={handleCheckbox}
             name="fire"
             id="fire"
           />
-          <label htmlFor="fire">Fuego</label>
+          <label className="cursor-pointer" htmlFor="fire">Fuego</label>
         </div>
-        <div className="group-type">
+        <div className="flex gap-[10px] ml-[15px]">
           <input
             type="checkbox"
             onChange={handleCheckbox}
             name="bug"
             id="bug"
           />
-          <label htmlFor="bug">Bicho</label>
+          <label className="cursor-pointer" htmlFor="bug">Bicho</label>
         </div>
-        <div className="group-type">
+        <div className="flex gap-[10px] ml-[15px]">
           <input
             type="checkbox"
             onChange={handleCheckbox}
             name="fairy"
             id="fairy"
           />
-          <label htmlFor="fairy">Hada</label>
+          <label className="cursor-pointer" htmlFor="fairy">Hada</label>
         </div>
-        <div className="group-type">
+        <div className="flex gap-[10px] ml-[15px]">
           <input
             type="checkbox"
             onChange={handleCheckbox}
             name="dragon"
             id="dragon"
           />
-          <label htmlFor="dragon">Dragón</label>
+          <label className="cursor-pointer" htmlFor="dragon">Dragón</label>
         </div>
-        <div className="group-type">
+        <div className="flex gap-[10px] ml-[15px]">
           <input
             type="checkbox"
             onChange={handleCheckbox}
             name="shadow"
             id="shadow"
           />
-          <label htmlFor="shadow">Fantasma</label>
+          <label className="cursor-pointer" htmlFor="shadow">Fantasma</label>
         </div>
-        <div className="group-type">
+        <div className="flex gap-[10px] ml-[15px]">
           <input
             type="checkbox"
             onChange={handleCheckbox}
             name="ground"
             id="ground"
           />
-          <label htmlFor="ground">Tierra</label>
+          <label className="cursor-pointer" htmlFor="ground">Tierra</label>
         </div>
-        <div className="group-type">
+        <div className="flex gap-[10px] ml-[15px]">
           <input
             type="checkbox"
             onChange={handleCheckbox}
             name="normal"
             id="normal"
           />
-          <label htmlFor="normal">Normal</label>
+          <label className="cursor-pointer" htmlFor="normal">Normal</label>
         </div>
-        <div className="group-type">
+        <div className="flex gap-[10px] ml-[15px]">
           <input
             type="checkbox"
             onChange={handleCheckbox}
             name="psychic"
             id="psychic"
           />
-          <label htmlFor="psychic">Psíquico</label>
+          <label className="cursor-pointer" htmlFor="psychic">Psíquico</label>
         </div>
-        <div className="group-type">
+        <div className="flex gap-[10px] ml-[15px]">
           <input
             type="checkbox"
             onChange={handleCheckbox}
             name="steel"
             id="steel"
           />
-          <label htmlFor="steel">Acero</label>
+          <label className="cursor-pointer" htmlFor="steel">Acero</label>
         </div>
-        <div className="group-type">
+        <div className="flex gap-[10px] ml-[15px]">
           <input
             type="checkbox"
             onChange={handleCheckbox}
             name="dark"
             id="dark"
           />
-          <label htmlFor="dark">Siniestro</label>
+          <label className="cursor-pointer" htmlFor="dark">Siniestro</label>
         </div>
-        <div className="group-type">
+        <div className="flex gap-[10px] ml-[15px]">
           <input
             type="checkbox"
             onChange={handleCheckbox}
             name="electric"
             id="electric"
           />
-          <label htmlFor="electric">Eléctrico</label>
+          <label  className="cursor-pointer" htmlFor="electric">Eléctrico</label>
         </div>
-        <div className="group-type">
+        <div className="flex gap-[10px] ml-[15px]">
           <input
             type="checkbox"
             onChange={handleCheckbox}
             name="fighting"
             id="fighting"
           />
-          <label htmlFor="fighting">Lucha</label>
+          <label className="cursor-pointer" htmlFor="fighting">Lucha</label>
         </div>
-        <div className="group-type">
+        <div className="flex gap-[10px] ml-[15px]">
           <input
             type="checkbox"
             onChange={handleCheckbox}
             name="flying"
             id="flying"
           />
-          <label htmlFor="flying">Volador</label>
+          <label className="cursor-pointer" htmlFor="flying">Volador</label>
         </div>
-        <div className="group-type">
+        <div className="flex gap-[10px] ml-[15px]">
           <input
             type="checkbox"
             onChange={handleCheckbox}
             name="ice"
             id="ice"
           />
-          <label htmlFor="ice">Hielo</label>
+          <label className="cursor-pointer" htmlFor="ice">Hielo</label>
         </div>
-        <div className="group-type">
+        <div className="flex gap-[10px] ml-[15px]">
           <input
             type="checkbox"
             onChange={handleCheckbox}
             name="poison"
             id="poison"
           />
-          <label htmlFor="poison">Veneno</label>
+          <label className="cursor-pointer" htmlFor="poison">Veneno</label>
         </div>
-        <div className="group-type">
+        <div className="flex gap-[10px] ml-[15px]">
           <input
             type="checkbox"
             onChange={handleCheckbox}
             name="rock"
             id="rock"
           />
-          <label htmlFor="rock">Roca</label>
+          <label className="cursor-pointer" htmlFor="rock">Roca</label>
         </div>
-        <div className="group-type">
+        <div className="flex gap-[10px] ml-[15px]">
           <input
             type="checkbox"
             onChange={handleCheckbox}
             name="water"
             id="water"
           />
-          <label htmlFor="water">Agua</label>
+          <label className="cursor-pointer" htmlFor="water">Agua</label>
         </div>
       </div>
     </div>

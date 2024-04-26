@@ -4,20 +4,21 @@ import { Link } from "react-router-dom";
 export const CardPokemon = ({ pokemon }) => {
   return (
     <Link to={`/pokemon/${pokemon.id}`} className="cursor-pointer">
-      <div className="card-img">
+      <div className="bg-[#f2f2f2] flex items-center justify-center rounded-[5px] h-[250px]">
         <img
+        className="w-full h-full"
           src={pokemon.sprites.other.dream_world.front_default}
           alt={`Pokemon ${pokemon.name}`}
         />
       </div>
-      <div className="card-info">
-        <span className="pokemon-id">N° {pokemon.id}</span>
-        <h3>{pokemon.name}</h3>
-        <div className="card-types">
+      <div className="p-[15px]">
+        <span className="block text-[#888] mb-[15px]">N° {pokemon.id}</span>
+        <h3 className="text-[#333]">{pokemon.name}</h3>
+        <div className="flex gap-[10px] mt-[10px]">
           {pokemon.types.map((type) => (
             <span
               key={type.type.name}
-              className={`bg-${type.type.name}`}
+              className={`bg-${type.type.name} text-xs py-[5px] px-5 rounded-md text-white`}
             >
               {type.type.name}
             </span>

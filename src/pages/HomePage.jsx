@@ -7,15 +7,15 @@ export const HomePage = () => {
 
   return (
     <>
-      <div className="container-filter w-[1200px] mx-auto">
-        <div className="icon-filter" onClick={() => setActive(!active)}>
+      <div className="flex w-[1200px] mx-auto">
+        <div className="flex items-center gap-[15px] mb-5 cursor-pointer" onClick={() => setActive(!active)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="icon"
+            className="w-[30px] h-[30px] stroke-slate-500 font-extrabold"
           >
             <path
               strokeLinecap="round"
@@ -28,8 +28,8 @@ export const HomePage = () => {
       </div>
       <PokemonList />
       <FilterBar />
-      <div className="container-btn-load-more container">
-        <button className="btn-load-more" onClick={onClickLoadMore}>
+      <div className="flex justify-center mb-5 mt-5 min-w-[1200px} mx-auto">
+        <button className="bg-primary border-none py-[15px] px-10 text-white rounded-[10px] cursor-pointer hover:bg-primary-hover hover:text-black" onClick={onClickLoadMore}>
           Cargar más
         </button>
       </div>
