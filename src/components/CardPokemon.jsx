@@ -17,7 +17,7 @@ export const CardPokemon = ({ pokemon }) => {
           {pokemon.types.map((type) => (
             <span
               key={type.type.name}
-              className={`rounded-none bg-${type.type.name}`}
+              className={`bg-${type.type.name}`}
             >
               {type.type.name}
             </span>

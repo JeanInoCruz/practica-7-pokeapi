@@ -28,8 +28,8 @@ export const PokemonPage = () => {
         <Loader />
       ) : (
         <>
-          <div className="header-main-pokemon">
-            <span className="absolute top-[-130px] left-0 font-bold text-primary-hover text-[200px]">#{pokemon.id}</span>
+          <div className="mt-5 flex items-center relative">
+            <span className="absolute flex items-center top-[-130px] bottom-[286px] left-0 font-bold text-primary-hover text-[200px]">#{pokemon.id}</span>
             <div className="container-img-pokemon">
               <img
                 src={pokemon.sprites.other.dream_world.front_default}
@@ -39,10 +39,10 @@ export const PokemonPage = () => {
 
             <div className="container-info-pokemon">
             
-              <h1>{primerMayuscula(pokemon.name)}</h1>
+              <h1 className="text-right text-6xl">{primerMayuscula(pokemon.name)}</h1>
               <div className="card-types info-pokemon-type">
                 {pokemon.types.map((type) => (
-                  <span key={type.type.name} className={`${type.type.name}`}>
+                  <span key={type.type.name} className={`bg-${type.type.name}`}>
                     {type.type.name}
                   </span>
                 ))}

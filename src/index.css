@@ -1,4 +1,17 @@
 @tailwind base;
+
+  h1 {
+    @apply text-[2em];
+    @apply font-bold
+    
+  }
+  h3 {
+    @apply text-lg font-bold;
+  }
+  span {
+    @apply font-medium
+  }
+ 
 @tailwind components;
 @tailwind utilities;
 

@@ -11,7 +11,7 @@ export const PokemonList = () => {
       {loading ? (
         <Loader />
       ) : (
-        <div className="grid grid-cols-4 gap-5 mx-auto max-w-7xl">
+        <div className="grid grid-cols-4 gap-5 mx-auto max-w-[1200px]">
           {filteredPokemons.length ? (
             <>
               {filteredPokemons.map((pokemon) => (

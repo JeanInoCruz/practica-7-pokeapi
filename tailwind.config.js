@@ -6,10 +6,7 @@ export default {
   ],  
   theme: {
    
-    fontFamily: {
-      'Montserrat': ['Montserrat', 'system-ui']
-    },
-    extend: {
+       extend: {
       colors: {
         'fire': '#ff7402',
         'grass': '#9bcc50',
@@ -26,13 +23,16 @@ export default {
         'fighting': '#d56723',
         'dark': '#707070',
         'bug': '#729f3f',
-        'dragon': 'gradient-to-r from-blue-500 to-red-500',
+        'dragon': '#00c2c7',
         'electric': '#bba909',
         'fairy': '#fdb9e9',
         'shadow': '#7b62a3',
         'unknow': '#757575',
         'primary': '#006d77',
         'primary-hover': '#83c5be',
+          },
+          fontFamily: {
+            'Montserrat': ['Montserrat', 'system-ui']
           },
     },
     
