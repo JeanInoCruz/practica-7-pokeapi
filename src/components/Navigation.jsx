@@ -55,7 +55,7 @@ export const Navigation = () => {
             />
           </div>
 
-          <button className="text-white font-semibold border-none outline-none bg-primary cursor-pointer font-medium rounded-3xl py-[15px] px-[30px] tracking-wide hover:bg-primary-hover hover:text-black">Buscar</button>
+          <button className="text-white font-semibold border-none outline-none bg-primary cursor-pointer rounded-3xl py-[15px] px-[30px] tracking-wide hover:bg-primary-hover hover:text-black">Buscar</button>
         </form>
       </header>
 
